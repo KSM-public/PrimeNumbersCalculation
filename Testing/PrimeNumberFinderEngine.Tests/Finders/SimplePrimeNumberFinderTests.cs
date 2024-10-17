@@ -1,6 +1,5 @@
 ﻿using PrimeNumberFinderEngine.Finders;
 using PrimeNumberFinderEngine.Tests.Utils;
-using System.Threading;
 
 namespace PrimeNumberFinderEngine.Tests.Finders
 {

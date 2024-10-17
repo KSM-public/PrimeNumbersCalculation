@@ -35,6 +35,23 @@ namespace PrimeNumberFinderGUI
         {
             if (_programState == ProgramState.Ready)
             {
+                if (_primeNumberStorage == null)
+                {
+                    try
+                    {
+                        InitStorage();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("Storage initialization failed: " + ex.Message);
+                    }
+                }
+
+                if (_primeNumberStorage == null)
+                {
+                    return;
+                }
+
                 try
                 {
                     BeginCalculation();
@@ -203,7 +220,12 @@ namespace PrimeNumberFinderGUI
             saveFileDialog.Filter = "XML File|*.xml";
             saveFileDialog.Title = "Save calculation to XML";
 
-            saveFileDialog.ShowDialog();
+            var result = saveFileDialog.ShowDialog();
+
+            if (result != DialogResult.OK)
+            {
+                return;
+            }
 
             var xmlStorage = new PrimeNumberXMLStorage(saveFileDialog.FileName);
 
@@ -224,18 +246,6 @@ namespace PrimeNumberFinderGUI
             if (_programState == ProgramState.Calculating)
             {
                 throw new Exception("Operation already pending.");
-            }
-
-            if (_primeNumberStorage == null)
-            {
-                try
-                {
-                    InitStorage();
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Storage initialization failed: " + ex.Message);
-                }
             }
 
             _cancellationTokenSource = new CancellationTokenSource();
@@ -308,7 +318,12 @@ namespace PrimeNumberFinderGUI
             var openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "XML File|*.xml";
             openFileDialog.Title = "Load data from XML";
-            openFileDialog.ShowDialog();
+            var result = openFileDialog.ShowDialog();
+
+            if (result != DialogResult.OK)
+            {
+                return;
+            }
 
             _primeNumberStorage = new PrimeNumberXMLStorage(openFileDialog.FileName);
 
