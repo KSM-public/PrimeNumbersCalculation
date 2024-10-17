@@ -1,4 +1,4 @@
-# Prime Number Finder
+# Prime Numbers Finder
 
 A C# WinForms application that calculates prime numbers in cycles.
 
