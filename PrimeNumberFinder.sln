@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumberFinderGUI", "PrimeNumberFinderGUI\PrimeNumberFinderGUI.csproj", "{0AD233B3-A497-4DA5-952D-26CA09ED59A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumberFinderEngine", "PrimeNumberFinderEngine\PrimeNumberFinderEngine.csproj", "{2957E47A-AC03-4BA1-B2FD-824887BA61F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{BB433527-37F5-4421-9F42-023EF4E17558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberFinderEngine.Tests", "Testing\PrimeNumberFinderEngine.Tests\PrimeNumberFinderEngine.Tests.csproj", "{7135D94C-E128-43F5-AE17-05DE5BE77144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AD233B3-A497-4DA5-952D-26CA09ED59A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD233B3-A497-4DA5-952D-26CA09ED59A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD233B3-A497-4DA5-952D-26CA09ED59A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD233B3-A497-4DA5-952D-26CA09ED59A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2957E47A-AC03-4BA1-B2FD-824887BA61F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2957E47A-AC03-4BA1-B2FD-824887BA61F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2957E47A-AC03-4BA1-B2FD-824887BA61F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2957E47A-AC03-4BA1-B2FD-824887BA61F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7135D94C-E128-43F5-AE17-05DE5BE77144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7135D94C-E128-43F5-AE17-05DE5BE77144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7135D94C-E128-43F5-AE17-05DE5BE77144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7135D94C-E128-43F5-AE17-05DE5BE77144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7135D94C-E128-43F5-AE17-05DE5BE77144} = {BB433527-37F5-4421-9F42-023EF4E17558}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C783DBD3-DE75-4C00-AA84-7A9F8CEC764E}
+	EndGlobalSection
+EndGlobal
