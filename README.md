@@ -2,6 +2,8 @@
 
 A C# WinForms application that calculates prime numbers in cycles.
 
+![Screenshot](./screenshot.png)
+
 ## Features
 
 - Prime numbers calculation in cycles lasting 2 minutes.
